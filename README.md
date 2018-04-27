@@ -1,5 +1,4 @@
-## checker
-Scala command line checklist checker
+## Scala command line checklist checker
 
 ### Run
 ```
@@ -12,20 +11,18 @@ $run "arg"
 ## Список в поездку
 -> Страна: Строка: страна
   ${страна == США}
-    $Переходник(американские)
     Америкаский флаг
   ${страна == Великобритания}
   	Флаг Великобритании
     Фунты, если есть
   ${страна == Канада}
   	Канадский флаг
-    Фунты, если есть
   Количество дней: Число: дни
   	деньги = ${дни * суточная_норма($Страна) + 100}
 # Одежда
   Носки, ${дни + 1} пар
   -> Погода, приблизительная температура: Число: градусы ${Цельсия|Фарингейта} 
-  	$(Фарингейта)  
+  	$(Фарингейт==true)  
   	  градусы = ${(градусы-32) / 1.8}
     ${градусы < 0}
       Свитер
@@ -40,10 +37,9 @@ $run "arg"
   Паспорт
 ```
 
-### pattern for args
+### pattern for arg
 Country: *Idetifier*={USA, Great Britain, Canada}, Count of day: *num*, temperature: *num* Cels|Fahr
 
-  
 ### example
 **input:** 
 run "country: USA, count of day: 5, temperature: 33 Fahr"
