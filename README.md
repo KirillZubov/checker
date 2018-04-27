@@ -49,6 +49,7 @@ Country: *Idetifier*={USA, Great Britain, Canada}, Count of day: *num*, temperat
 run "country: USA, count of day: 5, temperature: 33 Fahr"
 
 **output:**
+```
 checklist:
   - american flag
   - 600 USD
@@ -57,12 +58,13 @@ checklist:
     - 6 pairs of socks
     - sweater
     - all-weather jacket
-    
+```    
     
 **input:** 
 run "country: Canada, count of day: 3, temperature: -3 Cels"
     
-**output:**    
+**output:**   
+```
 checklist:
   - Canadian flag
   - pasport
@@ -72,4 +74,4 @@ checklist:
     - sweater
     - winter jacket
     - winter hat    
-    
+ ```   
