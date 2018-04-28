@@ -40,7 +40,7 @@ $run "arg"
 ### pattern for arg
 Country: *Idetifier*={USA, Great Britain, Canada}, Count of day: *num*, temperature: *num* Cels|Fahr
 
-### example
+### examples
 **input:** 
 run "country: USA, count of day: 5, temperature: 33 Fahr"
 
